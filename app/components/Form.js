@@ -19,14 +19,15 @@ const Form = ({todos, setTodos, input, setInput}) => {
     <form className='flex flex-row justify-center items-center py-20 text-xl'>
         <div className='pr-3 text-xl'>
             <input 
-            className='px-3.5 rounded-l-lg'
-            value={input} 
-            type='text' 
-            placeholder='Add a todo'
-            onChange={inputHandler} />
-            <button className='text-white bg-orange-500 px-3.5 rounded-r-lg' 
-                    type='click'
-                    onClick={submitTodoHandler}
+               className='px-3.5 rounded-l-lg'
+               value={input} 
+               type='text' 
+               placeholder='Add a todo'
+               onChange={inputHandler} />
+            <button 
+               className='text-white bg-orange-500 px-3.5 rounded-r-lg' 
+               type='click'
+               onClick={submitTodoHandler}
             >Add</button>
         </div>
         <div>
